@@ -256,3 +256,4 @@ JOIN neighborhood_avg na ON l.neighbourhood = na.neighbourhood
 GROUP BY l.id, p.price, na.avg_neighborhood_price, l.name;
 
 
+--To make it better in coding, you need to keep practising
