@@ -1,1 +1,1 @@
-# Seattle-Airbnb-Project
+# Seattle Airbnb SQL Capstone Project
