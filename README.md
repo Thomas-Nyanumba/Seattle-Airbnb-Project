@@ -36,6 +36,14 @@ This query identifies the neighborhood with the highest total revenue and the av
 
 **Result:** The neighborhood with the highest revenue and average price highlights areas of high demand.
 
+SELECT TOP 1  l.neighbourhood,
+    SUM(p.price) AS total_revenue,
+    AVG(p.price) AS avg_price_per_listing
+FROM listings l
+JOIN pricing p ON l.id = p.listing_id
+GROUP BY l.neighbourhood
+ORDER BY total_revenue DESC
+
 ### 2. Average Listing Price by Neighbourhood
 Here, I compare the average price of listings across neighborhoods to identify pricing trends.
 
