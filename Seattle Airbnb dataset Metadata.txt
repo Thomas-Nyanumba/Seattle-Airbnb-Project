@@ -1,0 +1,36 @@
+Listings Table
+id: Unique identifier for the listing.
+name: Title or name given to the listing.
+host_id: Unique identifier for the host.
+host_name: Name of the host.
+neighbourhood_group: Higher-level grouping of neighborhoods (e.g., borough, district).
+neighbourhood: Specific neighborhood where the listing is located.
+latitude: Geographic latitude of the listing.
+longitude: Geographic longitude of the listing.
+room_type: Type of accommodation (e.g., entire home/apt, private room, shared room).
+price: Listing price per night.
+minimum_nights: Minimum number of nights a guest can stay.
+number_of_reviews: Total number of reviews for the listing.
+last_review: Date of the last review.
+reviews_per_month: Average number of reviews per month.
+calculated_host_listings_count: Total number of listings hosted by the host.   
+availability_365: Number of days the listing is available for booking in the next 365 days.
+number_of_reviews_ltm: Number of reviews received in the last 12 months.
+license: Licensing information for the listing (if applicable).
+
+Pricing Table
+listing_id: Foreign key referencing the id in the listings table.
+date: Date of the record.
+available: Indicates if the listing was available for booking on that date.
+price: Price per night for that specific date.
+adjusted_price: Adjusted price after considering discounts or fees.
+minimum_nights: Minimum number of nights required for a stay on that date.
+maximum_nights: Maximum number of nights allowed for a stay on that date.
+
+Reviews Table
+listing_id: Foreign key referencing the id in the listings table.
+id: Unique identifier for the review.
+date: Date of the review.
+reviewer_id: Unique identifier for the reviewer.
+reviewer_name: Name of the reviewer.
+comments: Textual comments left by the reviewer.
